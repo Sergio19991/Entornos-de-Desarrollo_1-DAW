@@ -12,7 +12,7 @@ public class suma {
 	        System.out.println("Introduce el Segundo Número:");
 	        num2 = sc.nextInt();
 
-	        System.out.println("El Resultado, es " + (num1 + num2));
+	        System.out.println("El Resultado, es  " + (num1 + num2));
 	        
 	    }
 }
