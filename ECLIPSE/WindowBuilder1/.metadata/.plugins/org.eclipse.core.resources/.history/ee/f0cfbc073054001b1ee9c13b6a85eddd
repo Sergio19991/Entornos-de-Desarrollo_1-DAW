@@ -1,0 +1,100 @@
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+
+public class problemaPropuesto1 extends JFrame {
+
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					problemaPropuesto1 frame = new problemaPropuesto1();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public problemaPropuesto1() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JButton boton0 = new JButton("0");
+		boton0.setBounds(40, 200, 89, 23);
+		contentPane.add(boton0);
+		
+		JButton boton1 = new JButton("1");
+		boton1.setBounds(40, 166, 89, 23);
+		contentPane.add(boton1);
+		
+		JButton boton2 = new JButton("2");
+		boton2.setBounds(139, 166, 89, 23);
+		contentPane.add(boton2);
+		
+		JButton boton3 = new JButton("3");
+		boton3.setBounds(238, 166, 89, 23);
+		contentPane.add(boton3);
+		
+		JButton boton4 = new JButton("4");
+		boton4.setBounds(40, 132, 89, 23);
+		contentPane.add(boton4);
+		
+		JButton boton5 = new JButton("5");
+		boton5.setBounds(139, 132, 89, 23);
+		contentPane.add(boton5);
+		
+		JButton boton6 = new JButton("6");
+		boton6.setBounds(238, 132, 89, 23);
+		contentPane.add(boton6);
+		
+		JButton boton7 = new JButton("7");
+		boton7.setBounds(40, 98, 89, 23);
+		contentPane.add(boton7);
+		
+		JButton boton8 = new JButton("8");
+		boton8.setBounds(139, 98, 89, 23);
+		contentPane.add(boton8);
+		
+		JButton boton9 = new JButton("9");
+		boton9.setBounds(238, 98, 89, 23);
+		contentPane.add(boton9);
+		
+		JButton botonIgual = new JButton("=");
+		botonIgual.setBounds(139, 200, 188, 23);
+		contentPane.add(botonIgual);
+		
+		JButton botonMas = new JButton("+");
+		botonMas.setBounds(337, 98, 40, 23);
+		contentPane.add(botonMas);
+		
+		JButton botonMenos = new JButton("-");
+		botonMenos.setBounds(337, 132, 40, 23);
+		contentPane.add(botonMenos);
+		
+		JButton botonPor = new JButton("*");
+		botonPor.setBounds(337, 166, 40, 23);
+		contentPane.add(botonPor);
+		
+		JButton botonDividido = new JButton("/");
+		botonDividido.setBounds(337, 200, 40, 23);
+		contentPane.add(botonDividido);
+	}
+}
