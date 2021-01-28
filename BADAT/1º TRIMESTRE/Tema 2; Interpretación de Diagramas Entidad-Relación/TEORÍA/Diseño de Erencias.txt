@@ -1,0 +1,7 @@
+   Paso a Tablas:
+1.Una Tabla por Entidad.
+2.Quitar la Superentidad.
+3.Todo en una Tabla.
+
+     *La Relación de las Herencias simepre son de 1:N, ya que la primera parte es de (1,1) y la segunda parte es de (0,1). Y el "(0,1)", se considera "muchos" por el cero.
+     *En conclusión; el tipo de realción sería, "1:N".
