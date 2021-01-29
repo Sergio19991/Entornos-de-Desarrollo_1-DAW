@@ -1,1 +1,0 @@
-start https://dev.mysql.com/downloads/installer/

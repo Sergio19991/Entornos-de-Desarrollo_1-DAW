@@ -1,1 +1,0 @@
-start https://docs.google.com/document/d/1ZWmMNiRwoRmJ8WmOWaUwdnRMYQ_qycAthB5luWJy1mU/edit

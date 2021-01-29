@@ -1,1 +1,0 @@
-start http://cpcppw.es/mysql-ejercicios.html
