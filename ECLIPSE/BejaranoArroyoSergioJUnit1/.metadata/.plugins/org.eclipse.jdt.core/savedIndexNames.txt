@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+D:\I N T E R C A M B I O\BejaranoArroyoSergioJUnit1\.metadata\.plugins\org.eclipse.jdt.core
+3623371190.index
+456994919.index
+2778483507.index
