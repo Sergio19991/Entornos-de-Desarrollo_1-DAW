@@ -1,0 +1,13 @@
+import junit.framework.TestCase;
+
+public class RestaTest extends TestCase {
+
+	public void testDecrementa() {
+		fail("Not yet implemented");
+	}
+
+	public void testGetDiferencia() {
+		fail("Not yet implemented");
+	}
+
+}

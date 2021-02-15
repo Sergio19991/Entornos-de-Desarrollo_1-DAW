@@ -1,0 +1,25 @@
+import junit.framework.TestCase;
+
+public class SumaTest extends TestCase {
+	/*
+	 * @Test // Fallido public void testGetSuma() { Suma suma = new Suma(); double
+	 * resultado = suma.getSuma(1.0, 1.0); assertEquals(2.0, resultado); }
+	 * 
+	 * @Test // Fallido public void testIncrementa() { Suma suma = new Suma();
+	 * double resultado = suma.incrementa(5); assertEquals(5.0, resultado); }
+	 */
+
+	@Test // Correcto
+	public void testGetSuma() {
+		Suma suma = new Suma();
+		double resultado = suma.getSuma(1.0, 1.0);
+		assertEquals(1.0, resultado);
+	}
+
+	@Test // Correcto
+	public void testIncrementa() {
+		Suma suma = new Suma();
+		double resultado = suma.incrementa(5);
+		assertEquals(6.0, resultado);
+	}
+}
