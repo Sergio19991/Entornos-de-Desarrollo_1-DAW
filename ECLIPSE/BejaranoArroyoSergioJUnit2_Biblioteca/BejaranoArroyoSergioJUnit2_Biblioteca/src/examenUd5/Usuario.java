@@ -12,7 +12,10 @@ public class Usuario {
 		String msg = "";
 		if (!publi.isAlquilado()) {
 			publi.setAlquilado(true);
-			msg = "La publicacion se ha alquilado";
+			msg = /*
+					 * "La publicaciÛn " + publi.getNombre() +
+					 * " ha sido alquilada con Èxito. Gracias " + this.getNombre();
+					 */ "La PublicaciÛn se ha Alquilado.";
 		} else {
 			msg = "La publicaci√≥n " + publi.getNombre() + " no est√° disponible. ";
 		}
@@ -25,7 +28,10 @@ public class Usuario {
 			publi.setAlquilado(false);
 			msg = "La publicaci√≥n " + publi.getNombre() + " ha sido devuelta con √©xito. Gracias " + this.getNombre();
 		} else {
-			msg = "La publicaci√≥n " + publi.getNombre() + " no est√° disponible para devolver. ";
+			msg = /*
+					 * "La publicaciÛn " + publi.getNombre() +
+					 * " no est· disponible para devolver. ";
+					 */ "La PublicaciÛn no est· disponible para Devolver.";
 		}
 		return msg;
 	}
