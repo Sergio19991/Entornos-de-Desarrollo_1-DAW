@@ -1,0 +1,16 @@
+package examenUd5;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Usuario usuario1 = new Usuario("Sergio");
+		Usuario usuario2 = new Usuario("Bejarano");
+
+		Libro libro1 = new Libro("El Lazarillo de Tormes", "Anaya", "Anónimo");
+		Libro libro2 = new Libro("El Quijote", "Francisco de Robles", "Miguel de Cervantes");
+		
+		Revista revista1 = new Revista("REVISTA 1", "EDITORIAL_REVISTA 1", 2020, 3);
+		Revista revista2 = new Revista("REVISTA 2", "EDITORIAL_REVISTA 2", 2021, 6);
+	}
+
+}

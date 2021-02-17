@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+C:\Users\Sergio Bejarano\Documents\Entornos-de-Desarrollo_1-DAW\ECLIPSE\DebugPOOBiblioteca\.metadata\.plugins\org.eclipse.jdt.core

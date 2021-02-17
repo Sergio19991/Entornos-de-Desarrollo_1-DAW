@@ -1,0 +1,18 @@
+package examenUd5;
+
+import static org.junit.jupiter.api.Assertions.*; 
+
+import org.junit.jupiter.api.Test;
+
+class BibliotecaTest {
+
+	@Test
+	void testAgregarPublicacion() {
+		Publicacion publicacion1 = new Publicacion("PUBLICACIÓN 1", "EDITORIA 1");
+		Publicacion publicacion2 = new Publicacion("PUBLICACIÓN 2", "EDITORIA 1");
+		Publicacion publicacion3 = new Publicacion("PUBLICACIÓN 3", "EDITORIA 1");
+		Publicacion publicacion4 = new Publicacion("PUBLICACIÓN 4", "EDITORIA 1");
+		Publicacion publicacion5 = new Publicacion("PUBLICACIÓN 5", "EDITORIA 1");
+	}
+
+}

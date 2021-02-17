@@ -1,0 +1,40 @@
+package examenUd5;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class UsuarioTest {
+
+	@Test
+	void testAlquilarPublicacion() {
+		Usuario usuario1 = new Usuario("USUARIO 1");
+		Usuario usuario2 = new Usuario("USUARIO 2");
+		Libro libro1 = new Libro("LIBRO 1", "EDITORIAL_LIBRO 1", "AUTOR_LIBRO 1");
+		Libro libro2 = new Libro("LIBRO 2", "EDITORIAL_LIBRO 2", "AUTOR_LIBRO 2");
+
+		boolean resultadoTrue = true;
+		boolean resultadoFalse = true;
+		
+		usuario1.alquilarPublicacion(libro1);
+		resultado = libro1.isAlquilado(true);
+
+		usuario2.alquilarPublicacion(libro1);
+		usuario1.alquilarPublicacion(libro1);
+		libro1.isAlquilado();
+	}
+
+	@Test
+	void testDevolverPublicacion() {
+		Usuario usuario1 = new Usuario("USUARIO 1");
+		Usuario usuario2 = new Usuario("USUARIO 2");
+		Libro libro1 = new Libro("LIBRO 1", "EDITORIAL_LIBRO 1", "AUTOR_LIBRO 1");
+		Libro libro2 = new Libro("LIBRO 2", "EDITORIAL_LIBRO 2", "AUTOR_LIBRO 2");
+
+		usuario1.devolverPublicacion(libro1);
+		libro1.isAlquilado();
+
+		usuario2.devolverPublicacion(libro2);
+		libro2.isAlquilado();
+	}
+}

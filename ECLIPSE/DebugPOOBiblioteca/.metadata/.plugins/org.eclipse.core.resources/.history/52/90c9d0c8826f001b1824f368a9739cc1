@@ -1,0 +1,14 @@
+package examenUd5;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class BibliotecaTest {
+
+	@Test
+	void testAgregarPublicacion() {
+		fail("Not yet implemented");
+	}
+
+}

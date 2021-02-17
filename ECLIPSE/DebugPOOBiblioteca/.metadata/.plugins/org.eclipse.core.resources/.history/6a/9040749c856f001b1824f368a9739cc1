@@ -1,0 +1,19 @@
+package examenUd5;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class UsuarioTest {
+
+	@Test
+	void testAlquilarPublicacion() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testDevolverPublicacion() {
+		fail("Not yet implemented");
+	}
+
+}
