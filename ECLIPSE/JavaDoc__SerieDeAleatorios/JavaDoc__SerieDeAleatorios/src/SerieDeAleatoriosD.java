@@ -7,9 +7,9 @@ import java.util.Random;
  * Esta clase define objetos que contienen tantos enteros aleatorios entre 0 y
  * 1000 como se le definen al crear un objeto
  * 
- * @author: Sergio Bejarano Arroyo
+ * @author Sergio Bejarano Arroyo
  * 
- * @version: 22/09/2016/A
+ * @version 22/09/2016/A
  * 
  * @see <a href = "http://www.aprenderaprogramar.com" /> aprenderaprogramar.com
  *      – Didáctica en programación </a>

@@ -4,8 +4,8 @@ package banco;
  * Esta clase define objetos que contienen enteros, expresiones booleanas y
  * números decimales.
  * 
- * @author: Sergio Bejarano Arroyo
- * @version: 22/02/2021
+ * @author Sergio Bejarano Arroyo
+ * @version 22/02/2021
  */
 
 public class Cuenta {
