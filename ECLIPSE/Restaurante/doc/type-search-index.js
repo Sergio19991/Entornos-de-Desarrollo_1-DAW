@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"restaurante.copy","l":"Almacen"},{"p":"restaurante.copy","l":"Chef"},{"p":"restaurante.copy","l":"Recetario"}];updateSearchResults();
