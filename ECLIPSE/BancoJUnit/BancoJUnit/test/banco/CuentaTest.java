@@ -8,15 +8,17 @@ class CuentaTest {
 
 	@Test
 	void testIngresarDinero() {
-		Cuenta c = new Cuenta("100", "Veigar");
-		double saldoInicial = c.getSaldo();
-		c.ingresarDinero(50);
-		assertEquals(saldoInicial+50, c.getSaldo(), 0.01);
+		Cuenta cuenta1 = new Cuenta("100", "CUENTA 1");
+		double saldoInicial = cuenta1.getSaldo();
+		cuenta1.ingresarDinero(50);
+		assertEquals(saldoInicial + 50, cuenta1.getSaldo(), 0.01);
 	}
 
-	/*@Test
+	@Test
 	void testRetirarDinero() {
-		fail("Not yet implemented");
-	}*/
-
+		Cuenta cuenta2 = new Cuenta("100", "CUENTA 2");
+		double saldoFinal = cuenta2.getSaldo();
+		cuenta2.retirarDinero(75);
+		assertEquals(saldoFinal - 75, cuenta2.getSaldo(), 0.01);
+	}
 }
