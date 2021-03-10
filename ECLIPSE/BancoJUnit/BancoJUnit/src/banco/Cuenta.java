@@ -38,7 +38,7 @@ public class Cuenta {
 	}
 
 	protected boolean comprobarBloqueo() {
-		if (this.saldo <= 0) {
+		if (this.saldo < 0) { //Le he quitado el igual para comprobar que no se bloquea cuando es 0.
 			bloquearCuenta();
 			return true;
 		} else {

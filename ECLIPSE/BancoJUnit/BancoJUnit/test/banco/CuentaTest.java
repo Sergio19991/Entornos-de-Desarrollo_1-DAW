@@ -6,19 +6,68 @@ import org.junit.jupiter.api.Test;
 
 class CuentaTest {
 
+	/**
+	 * Test1a: Comprobar que hace lo correcto cuando ingrsamos un cantidad mayor que
+	 * 0.
+	 */
 	@Test
-	void testIngresarDinero() {
-		Cuenta cuenta1 = new Cuenta("100", "CUENTA 1");
-		double saldoInicial = cuenta1.getSaldo();
-		cuenta1.ingresarDinero(50);
-		assertEquals(saldoInicial + 50, cuenta1.getSaldo(), 0.01);
+	void testIngresarDineroMayorCero() {
+		Cuenta c = new Cuenta("100", "CUENTA");
+		double saldoInicial = c.getSaldo();
+		c.ingresarDinero(50);
+		assertEquals(saldoInicial + 50, c.getSaldo(), 0.01);
 	}
 
+	/**
+	 * Test2a: Comprobar que hace lo correcto cuando se ingresa una cantidad menor
+	 * que 0.
+	 */
 	@Test
-	void testRetirarDinero() {
-		Cuenta cuenta2 = new Cuenta("100", "CUENTA 2");
-		double saldoFinal = cuenta2.getSaldo();
-		cuenta2.retirarDinero(75);
-		assertEquals(saldoFinal - 75, cuenta2.getSaldo(), 0.01);
+	void testIngresarDineroMenorCero() {
+		Cuenta c = new Cuenta("100", "CUENTA");
+		c.ingresarDinero(-50);
+		assertEquals(0, c.getSaldo(), 0.01);
+	}
+
+	/**
+	 * Test1c: Comprobar que no permita ingresar una cantidad menor que 0.
+	 */
+	@Test
+	void testIngresarDineroCero() {
+		Cuenta c = new Cuenta("100", "CUENTA");
+		c.ingresarDinero(-50);
+		assertEquals(0, c.getSaldo(), 0.01);
+	}
+
+	/**
+	 * Test2a: Comprobar que se puede retirar 500 euro como máximo.
+	 */
+	@Test
+	void testIngresarDineroMaximo() {
+		Cuenta c = new Cuenta("100", "CUENTA");
+		c.ingresarDinero(600);
+		assertEquals(0, c.retirarDinero(501), 0.01);
+	}
+
+	/**
+	 * Test2b: Comprbar que la cuenta se bloquea si el saldo es 0.
+	 */
+	@Test
+	void testBloquearCuenta() {
+		Cuenta c = new Cuenta("100", "CUENTA");
+		c.ingresarDinero(400);
+		c.retirarDinero(401);
+		assertTrue(c.comprobarBloqueo());
+	}
+
+	/**
+	 * Test2c: Comprobar que la cuenta no se bloquea si el saldo es 0
+	 */
+	@Test
+	void bloquearComprobarBloqueoSaldoCero() {
+		Cuenta c = new Cuenta("100", "CUENTA");
+		c.ingresarDinero(400);
+		c.retirarDinero(400);
+		assertFalse(c.comprobarBloqueo());
 	}
 }
